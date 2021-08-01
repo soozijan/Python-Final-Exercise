@@ -3,14 +3,14 @@ import pytest
 
 
 def test_calculate_avarage():
-  assert school.calculate_avarage(6, 9, 9, 4) == 7
-  assert school.calculate_avarage(0, 0, 0, 0) == 0
-  assert school.calculate_avarage() == 0
+  assert school.calculate_avarage([6, 9, 9, 4]) == 7
+  assert school.calculate_avarage([0, 0, 0, 0]) == 0
+  assert school.calculate_avarage([0]) == 0
 
 
 def test_add_bonus():
-   assert school.add_bonus[6, 9, 9, 4] == [(6+5), (9+5) , (9+5) , (4+5)]
-   assert school.add_bonus[0, 0, 0, 0] == [(0 + 5), (0 + 5), (0 + 5), (0 + 5)]
+   assert school.add_bonus([6, 9, 9, 4]) == [(6+5), (9+5) , (9+5) , (4+5)]
+   assert school.add_bonus([0, 0, 0, 0]) == [(0 + 5), (0 + 5), (0 + 5), (0 + 5)]
 
 
 def test_get_resault():
