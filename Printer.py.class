@@ -1,0 +1,11 @@
+class Printer: # מחלקה תמיד מתחילה באות גדולה
+    def __init__(self, model):
+        self.model = model
+        print('New printer!')
+    def print_pages(self, pages):
+        for page in pages:
+            print(page)
+
+printer1 = Printer('HP123')
+
+printer1.print_pages(["123","moked"])
